@@ -1,0 +1,32 @@
+.btn-menu {
+  border: none;
+  background-color: transparent;
+  &__icon {
+    margin: 0 auto;
+    fill: currentColor;
+  }
+  .icon {
+    &--close {
+      display: none;
+    }
+    &--menu {
+      display: block;
+    }
+  }
+  &.is-open {
+    .icon {
+      &--close {
+        display: block;
+      }
+      &--menu {
+        display: none;
+      }
+    }
+  }
+  &:hover,
+  &:focus {
+    .icon {
+      fill: $accent-color;
+    }
+  }
+}

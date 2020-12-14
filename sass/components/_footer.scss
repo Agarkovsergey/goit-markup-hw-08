@@ -1,0 +1,136 @@
+/* footer */
+.footer {
+  background-color: $footer-bg-color;
+  color: $white-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .container {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
+.footer__list {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.footer__item {
+  &:not(:last-child) {
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+}
+.footer-address__item {
+  text-align: center;
+  a {
+    color: $footer-text-color;
+  }
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.footer__join {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.social__list {
+  display: flex;
+  justify-content: center;
+}
+.social__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: $white-color;
+  background-color: $social-bg-color;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms $timing-func;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.footer__form {
+  @media screen and(min-width:1200px) {
+    display: flex;
+  }
+}
+.footer__input {
+  width: 100%;
+  height: 50px;
+  padding: 15px 16px;
+  margin-bottom: 20px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: $footer-text-color;
+  border-radius: 4px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+  }
+}
+.footer__button {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  padding: 10px 29px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.87;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-align: left;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+}
+.icon-send {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}

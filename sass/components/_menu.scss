@@ -1,0 +1,12 @@
+.menu-container {
+  position: absolute;
+  top: 62px;
+  left: 0;
+  display: none;
+  background-color: green;
+  width: 100%;
+  padding: 60px 0;
+  &.is-open {
+    display: block;
+  }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo-container">
+          <a href="./index.html" class="logo-container__link"><span>Web</span>Studio</a>
+        </div>
+        <button type="button" class="btn-menu" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width="40" height="40" aria-label="меню">
+            <use href="./images/icons/sprite.svg#icon-menu" class="btn-menu__icon icon icon--menu"></use>
+            <use href="./images/icons/sprite.svg#icon-close" class="btn-menu__icon icon icon--close"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <div class="nav-container">
+            <nav class="site-nav">
+              <ul class="site-nav__list">
+                <li class="site-nav__item">
+                  <a href="./index.html" class="site-nav__link link link--current">студия</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="site-nav__link link">портфолио</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="#" class="site-nav__link link">контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <address class="header-address">
+            <ul class="header-address__list">
+              <li class="header-address__item">
+                <a href="mailto:info@devstudio.com" class="header-address__link link">
+                  <svg class="header-address__icon">
+                    <use href="./images/icons/sprite.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header-address__item">
+                <a href="tel:+380961111111" class="header-address__link link">
+                  <svg class="header-address__icon">
+                    <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </header>
+    <main class="studio-page">
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            эффективные решения
+            <br />
+            для вашего бизнеса
+          </h1>
+          <div class="hero__btn-block">
+            <button type="button" class="hero__button button--primary" data-modal-open>Заказать услугу</button>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <h2 class="section-title visually-hidden">Наши плюсы</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__container">
+                <svg class="features__icon">
+                  <use href="./images/icons/sprite.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">внимание к деталям</h3>
+              <p class="features__description">идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+            </li>
+            <li class="features__item">
+              <div class="features__container">
+                <svg class="features__icon">
+                  <use href="./images/icons/sprite.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">пунктуальность</h3>
+              <p class="features__description">задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+            </li>
+            <li class="features__item">
+              <div class="features__container">
+                <svg class="features__icon">
+                  <use href="./images/icons/sprite.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">планирование</h3>
+              <p class="features__description">равным образом консультация с широким активом в значительной степени обуславливает.</p>
+            </li>
+            <li class="features__item">
+              <div class="features__container">
+                <svg class="features__icon">
+                  <use href="./images/icons/sprite.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="features__title">современные технологии</h3>
+              <p class="features__description">значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <div class="footer__item">
+            <div class="logo-container logo-container--centred">
+              <a href="./index.html" class="logo-container__link logo-container__link--inverse"><span>Web</span>Studio</a>
+            </div>
+            <address class="footer-address">
+              <ul class="footer-address__list">
+                <li class="footer-address__item"><p>г. Киев, пр-т Леси Украинки, 26</p></li>
+                <li class="footer-address__item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="footer-address__item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__item social">
+            <b class="footer__join">Присоединяйтесь</b>
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <svg class="social__icon">
+                    <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon">
+                    <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon">
+                    <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg class="social__icon">
+                    <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__form-wraper">
+          <b class="footer__join">Подпишитесь на рассылку</b>
+          <form action="" class="footer__form">
+            <input type="email" name="email" placeholder="E-mail" class="footer__input" />
+            <button type="submit" class="footer__button button--primary">
+              Подписаться
+              <svg class="icon-send">
+                <use href="./images/icons/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./script/menu.js"></script>
+  </body>
+</html>
