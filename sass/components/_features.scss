@@ -1,6 +1,9 @@
 /* feature-block*/
 .features {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 .features__container {
   margin-bottom: 30px;
@@ -18,10 +21,20 @@
   }
 }
 .features__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
     &:nth-child(2n + 1) {
       margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
     }
   }
   @media screen and (min-width: 1200px) {

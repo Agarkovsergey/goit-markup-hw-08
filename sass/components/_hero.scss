@@ -54,5 +54,6 @@
   padding: 10px 32px;
   border: none;
   outline: none;
+  cursor: pointer;
   transition: background-color 250ms $timing-func, color 250ms $timing-func;
 }

@@ -124,10 +124,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 1200px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
+  cursor: pointer;
+  transition: background-color 250ms $timing-func, color 250ms $timing-func;
 }
 .icon-send {
   width: 24px;
