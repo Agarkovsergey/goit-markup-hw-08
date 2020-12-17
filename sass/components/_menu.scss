@@ -1,12 +1,123 @@
 .menu-container {
+  @media screen and (max-width: 767px) {
+    // display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $white-color;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    padding: 60px 0;
+    &.is-open {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-container {
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 304px;
+  }
+}
+.site-nav__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.site-nav__link {
+  position: relative;
+  display: block;
+  padding: 32px 0;
+  color: $primary-text-color;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: color 250ms $timing-func;
+  &--current {
+    color: $accent-color;
+  }
+}
+.site-nav__link:hover,
+.site-nav__link:focus {
+  color: $accent-color;
+}
+.site-nav__link::after {
+  content: '';
   position: absolute;
-  top: 62px;
+  bottom: 0;
   left: 0;
   display: none;
-  background-color: green;
   width: 100%;
-  padding: 60px 0;
-  &.is-open {
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accent-color;
+}
+.site-nav__link--current {
+  &::after {
     display: block;
   }
+}
+.site-nav__item:not(:last-child) {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
+}
+.header-address__list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
+.header-address__item:first-child {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+  }
+}
+
+.header-address__link {
+  color: $secondary-text-color;
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color 250ms $timing-func;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    padding: 32px 0;
+  }
+}
+.header-address__icon {
+  margin-right: 10px;
+  fill: $secondary-text-color;
+  transition: fill 250ms $timing-func;
+}
+.icon-message {
+  width: 16px;
+  height: 12px;
+}
+.icon-phone {
+  width: 10px;
+  height: 16px;
+}
+.header-address__link:hover .icon-message,
+.header-address__link:focus .icon-message,
+.header-address__link:hover .icon-phone,
+.header-address__link:focus .icon-phone {
+  fill: $accent-color;
 }

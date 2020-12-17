@@ -9,7 +9,7 @@
   .clients__item {
     width: calc((100% - 15px) / 2);
     &:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
+      margin-bottom: 15px;
     }
     &:nth-child(2n + 1) {
       margin-right: 15px;

@@ -13,6 +13,10 @@
     display: block;
     padding-top: 15px;
     padding-bottom: 15px;
+    @media screen and (min-width: 768px) {
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
     span {
       color: $accent-color;
     }

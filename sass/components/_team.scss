@@ -1,0 +1,56 @@
+.team-block {
+  background-color: $secondary-background-color;
+  padding: 94px 0;
+}
+.team-block__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.team-block__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.team-block__post {
+  color: $secondary-text-color;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.team-block__social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.team-block__employee-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  color: $secondary-text-color;
+  background-color: $white-color;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms $timing-func;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.team-block__employee-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: fill 250ms $timing-func;
+}
+.team-block__employee-link:hover .team-block__employee-icon,
+.team-block__employee-link:focus .team-block__employee-icon {
+  fill: $white-color;
+}
