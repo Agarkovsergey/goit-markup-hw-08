@@ -1,6 +1,6 @@
 .menu-container {
   @media screen and (max-width: 767px) {
-    // display: none;
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;
@@ -19,6 +19,9 @@
 }
 
 .nav-container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
   @media screen and (min-width: 768px) {
     margin-right: 84px;
   }
@@ -27,9 +30,10 @@
   }
 }
 .site-nav__list {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
   }
 }
 .site-nav__link {
@@ -45,6 +49,9 @@
   transition: color 250ms $timing-func;
   &--current {
     color: $accent-color;
+  }
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
   }
 }
 .site-nav__link:hover,
@@ -73,10 +80,17 @@
   }
 }
 .header-address__list {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
+    align-items: center;
   }
 }
+
 .header-address__item:first-child {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
@@ -96,6 +110,11 @@
   &:hover,
   &:focus {
     color: $accent-color;
+  }
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 16px;
   }
   @media screen and (min-width: 1200px) {
     display: inline-flex;
