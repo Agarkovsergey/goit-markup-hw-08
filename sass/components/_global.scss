@@ -103,7 +103,9 @@ address {
     }
   }
 }
-
+body.modal-open {
+  overflow: hidden;
+}
 /* этот класс нужен для фильтра, и присваиваеться он только в джава скрипте */
 .card-invisible {
   display: none;
