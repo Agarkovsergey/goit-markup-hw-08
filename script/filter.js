@@ -1,4 +1,4 @@
-let x = document.getElementsByClassName("filter-button");
+let x = document.getElementsByClassName("filter__button");
 let filter = "any";
 const options = [
     "any",
@@ -9,27 +9,24 @@ const options = [
 ];
 
 const handler = (option) => (e) => { 
-    let btns = document.getElementsByClassName("filter-button");
+    let btns = document.getElementsByClassName("filter__button");
     for (let j = 0; j < btns.length; j++) { 
-        btns[j].classList.remove("current");
+        btns[j].classList.remove("filter__button--current");
     }
-    e.target.classList.add("current");
+    e.target.classList.add("filter__button--current");
     
     filter = option;
 
-    let cards = document.getElementsByClassName("portfolio-card");
+    let cards = document.getElementsByClassName("card__item");
     for (let j = 0; j < cards.length; j++) { 
         cards[j].classList.remove("card-invisible");
-        cards[j].classList.add("test");
         
         if (filter === "any") {
-            cards[j].classList.remove("test");
             continue;
         }
 
         if (!cards[j].classList.contains(filter)) {
             cards[j].classList.add("card-invisible");
-            cards[j].classList.remove("test");
         }
     }
 }

@@ -1,0 +1,27 @@
+.our-job {
+  padding: 94px 0;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.our-job__list {
+  display: flex;
+  justify-content: space-between;
+}
+.our-job__item {
+  position: relative;
+}
+.our-job__img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 27px 0;
+  background-color: $overlay-bg-color;
+  font-weight: 700;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white-color;
+}
