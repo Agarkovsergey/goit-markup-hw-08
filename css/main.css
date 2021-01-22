@@ -587,6 +587,7 @@ body.modal-open {
   }
   .menu-container.is-open {
     display: block;
+    z-index: 10;
   }
 }
 
