@@ -37,6 +37,9 @@
   &:not(:last-child) {
     margin-bottom: 8px;
   }
+  @media screen and (min-width: 1200px) {
+    text-align-last: left;
+  }
 }
 .footer__join {
   text-transform: uppercase;

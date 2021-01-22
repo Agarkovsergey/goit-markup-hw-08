@@ -2,6 +2,9 @@
   &--centred {
     text-align: center;
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      text-align-last: left;
+    }
   }
   &__link {
     color: $primary-text-color;

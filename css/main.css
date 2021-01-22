@@ -508,6 +508,12 @@ body.modal-open {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo-container--centred {
+    text-align-last: left;
+  }
+}
+
 .logo-container__link {
   color: #212121;
   font-family: 'Raleway', sans-serif;
@@ -967,7 +973,7 @@ body.modal-open {
 }
 
 .our-job {
-  padding: 94px 0;
+  padding: 0 0 0 94px;
   display: none;
 }
 
@@ -1500,6 +1506,12 @@ body.modal-open {
 
 .footer-address__item:not(:last-child) {
   margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address__item {
+    text-align-last: left;
+  }
 }
 
 .footer__join {
